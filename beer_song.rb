@@ -7,6 +7,9 @@ class BeerSong
     when 2
     "#{verse_number} bottles of beer on the wall, #{verse_number} bottles of beer.\n" \
     "Take one down and pass it around, #{verse_number-1} bottle of beer on the wall.\n"
+    when 1
+    "#{verse_number} bottle of beer on the wall, #{verse_number} bottle of beer.\n" \
+    "Take it down and pass it around, no more bottles of beer on the wall.\n"
     end
   end
 
