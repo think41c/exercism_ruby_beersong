@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'minitest/pride'
 require_relative 'beer_song'
 
 class BeerSongTest < Minitest::Test
