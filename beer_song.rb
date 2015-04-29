@@ -20,6 +20,7 @@ class BeerSong
     multiple_verses = []  
     until high_verse == (low_verse - 1)
       multiple_verses << verse(high_verse)
+      multiple_verses << "\n"
       high_verse = high_verse - 1
     end
     multiple_verses.join
@@ -30,6 +31,6 @@ class BeerSong
   end
 
 end
-# a = BeerSong.new
-# puts a.verses(8, 6)
+a = BeerSong.new
+puts a.verses(8, 6)
 # puts a.sing
