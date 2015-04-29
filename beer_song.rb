@@ -19,8 +19,7 @@ class BeerSong
   def verses(high_verse, low_verse)
     multiple_verses = []  
     until high_verse == (low_verse - 1)
-      multiple_verses << verse(high_verse)
-      multiple_verses << "\n"
+      multiple_verses << verse(high_verse) + "\n"
       high_verse = high_verse - 1
     end
     multiple_verses.join
