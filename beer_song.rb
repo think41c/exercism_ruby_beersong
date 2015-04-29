@@ -17,18 +17,19 @@ class BeerSong
   end
 
   def verses(high_verse, low_verse)
-  # high_verse += 1
-  # Start at the high verse and end on the low verse
+    multiple_verses = []  
     until high_verse == (low_verse - 1)
-      
-      puts verse(high_verse)
-      high_verse = high_verse -1
+      multiple_verses << verse(high_verse)
+      high_verse = high_verse - 1
     end
+    multiple_verses.join
   end
 
   def sing
+    verses(99,0)
   end
 
 end
-a = BeerSong.new
-a.verses(8, 6)
+# a = BeerSong.new
+# puts a.verses(8, 6)
+# puts a.sing
