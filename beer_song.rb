@@ -29,8 +29,4 @@ class BeerSong
   def sing
     verses(99,0)
   end
-
 end
-a = BeerSong.new
-puts a.verses(8, 6)
-# puts a.sing
