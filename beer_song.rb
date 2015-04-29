@@ -15,8 +15,15 @@ class BeerSong
       "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
     end
   end
-  
+
   def verses(high_verse, low_verse)
+  # high_verse += 1
+  # Start at the high verse and end on the low verse
+    until high_verse == (low_verse - 1)
+      
+      puts verse(high_verse)
+      high_verse = high_verse -1
+    end
   end
 
   def sing
@@ -24,4 +31,4 @@ class BeerSong
 
 end
 a = BeerSong.new
-p a.verse(2)
+a.verses(8, 6)
