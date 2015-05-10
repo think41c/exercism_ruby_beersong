@@ -5,7 +5,6 @@ class BeerSong
   def initialize 
     @multiple_verses = mutliple_verses = []
   end
-
   
   def verse(verse_number)
     case verse_number
@@ -26,7 +25,7 @@ class BeerSong
 
   def verses(high_verse, low_verse)
     until high_verse < low_verse
-      @multiple_verses << verse(high_verse)
+      @multiple_verses << verse(high_verse) + "\n"
       high_verse -= 1
     end
     multiple_verses.join
