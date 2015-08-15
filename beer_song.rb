@@ -25,7 +25,7 @@ class BeerSong
 
   def verses(high_verse, low_verse)
     until high_verse < low_verse
-      @multiple_verses << verse(high_verse) + "\n"
+      @multiple_verses.push(verse(high_verse) + "\n")
       high_verse -= 1
     end
     multiple_verses.join
@@ -46,3 +46,5 @@ class BeerSong
   end
 
 end
+song = BeerSong.new
+p song.verses(8, 6)
